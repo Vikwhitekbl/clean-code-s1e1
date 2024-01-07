@@ -27,6 +27,9 @@
   width: 500px;
   margin: 0 auto 0;
 }
+#add-item {
+  margin: 16px 0;
+}
 .task {
   width: 56%;
   display: inline-block;
@@ -34,6 +37,7 @@
 }
 .task-row-wrap {
   display: flex;
+  margin-bottom: 16px;
 }
 ul {
   margin: 0;
@@ -61,8 +65,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
