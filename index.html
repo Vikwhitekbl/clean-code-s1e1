@@ -11,52 +11,56 @@
     >
   </head>
   <body class="page">
-    <div class="eisenhower-matrix">
+    <header class="eisenhower-matrix">
       <img class="eisenhower-matrix__example" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix example">
       <a class="eisenhower-matrix__more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="application">
-      <div class="application__add-item">
-        <h3 class="add-item__header">Add Item</h3>
-      </div>
-      <div class="add-item__new-task-wrap">
-        <input id="new-task" class="add-item__new-task__input task" type="text">
-        <button class="add-item__new-task__button">Add</button>
-      </div>
-      <h3 class="todo__header">Todo</h3>
-      <ul class="todo__incomplete-tasks">
-        <li class="todo__incomplete-tasks__current-task current-task">
-          <input class="current-task__status-checkbox" type="checkbox">
-          <label class="current-task__name task">Pay Bills</label>
-          <input type="text" class="current-task__correctable-name task">
-          <button class="current-task__edit-btn edit">Edit</button>
-          <button class="current-task__delete-btn delete">
-            <img class="delete-btn__icon" src="./remove.svg" alt="remove">
-          </button>
-        </li>
-        <li class="todo__incomplete-tasks__current-task current-task edit-mode">
-          <input class="current-task__status-checkbox" type="checkbox">
-          <label class="current-task__name task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="current-task__correctable-name task">
-          <button class="current-task__edit-btn edit">Save</button>
-          <button class="current-task__delete-btn delete">
-            <img class="delete-btn__icon" src="./remove.svg" alt="remove">
-          </button>
-        </li>
-      </ul>
-      <h3 class="completed__header">Completed</h3>
-      <ul class="completed__completed-tasks">
-        <li class="completed__completed-tasks__current-task current-task">
-          <input class="current-task__status-checkbox" type="checkbox" checked>
-          <label class="current-task__name task">See the Doctor</label>
-          <input type="text" class="current-task__correctable-name task">
-          <button class="current-task__edit-btn edit">Edit</button>
-          <button class="current-task__delete-btn delete">
-            <img class="delete-btn__icon" src="./remove.svg" alt="remove">
-          </button>
-        </li>
-      </ul>
-    </div>
+    </header>
+    <main class="application">
+      <section class="application__add-item">
+        <h2 class="add-item__header">Add Item</h2>
+        <div class="add-item__new-task-wrap">
+          <input id="new-task" class="add-item__new-task__input task" type="text">
+          <button class="add-item__new-task__button">Add</button>
+        </div>
+      </section>
+      <section class="application__todo">
+        <h2 class="todo__header">Todo</h2>
+        <ul class="todo__incomplete-tasks">
+          <li class="todo__incomplete-tasks__current-task current-task">
+            <input class="current-task__status-checkbox" type="checkbox">
+            <label class="current-task__name task">Pay Bills</label>
+            <input type="text" class="current-task__correctable-name task">
+            <button class="current-task__edit-btn edit">Edit</button>
+            <button class="current-task__delete-btn delete">
+              <img class="delete-btn__icon" src="./remove.svg" alt="remove">
+            </button>
+          </li>
+          <li class="todo__incomplete-tasks__current-task current-task edit-mode">
+            <input class="current-task__status-checkbox" type="checkbox">
+            <label class="current-task__name task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="current-task__correctable-name task">
+            <button class="current-task__edit-btn edit">Save</button>
+            <button class="current-task__delete-btn delete">
+              <img class="delete-btn__icon" src="./remove.svg" alt="remove">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="application__completed">
+        <h2 class="completed__header">Completed</h2>
+        <ul class="completed__completed-tasks">
+          <li class="completed__completed-tasks__current-task current-task">
+            <input class="current-task__status-checkbox" type="checkbox" checked>
+            <label class="current-task__name task">See the Doctor</label>
+            <input type="text" class="current-task__correctable-name task">
+            <button class="current-task__edit-btn edit">Edit</button>
+            <button class="current-task__delete-btn delete">
+              <img class="delete-btn__icon" src="./remove.svg" alt="remove">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
