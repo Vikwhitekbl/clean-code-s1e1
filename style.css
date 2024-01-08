@@ -10,6 +10,9 @@
   display: block;
   text-align: right;
 }
+.eisenhower-matrix__header {
+  display: none;
+}
 .eisenhower-matrix__example {
   width: 100%;
 }
